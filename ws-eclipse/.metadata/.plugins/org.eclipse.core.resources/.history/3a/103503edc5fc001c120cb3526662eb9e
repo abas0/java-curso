@@ -1,0 +1,28 @@
+package semPOO;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float ladoA = sc.nextFloat();
+		float ladoB = sc.nextFloat();
+		float ladoC = sc.nextFloat();
+		if(trianguloValido(ladoA, ladoB, ladoC)) {
+			System.out.println("Triângulo válido");
+		}
+		else {
+			System.out.println("Triângulo inválido");
+		}
+		sc.close();	
+	} 
+	
+	public static boolean trianguloValido (float a, float b, float c) {
+		if(a + b > c && a + c > b && b + c > a) {
+			return true;
+		}
+		return false;
+	}
+	
+
+}

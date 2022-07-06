@@ -1,0 +1,62 @@
+Locale.setDefault(Locale.US); //padrao de escrita do US
+
+resultado = (double) a / b;
+
+Scanner sc = new Scanner(System.in); //inicializar a variável para a entrada de dados
+
+sc.close() //para quando não precisar mais da variável scanner
+
+Sysout ctrl+ espaço -> eclpse termina de escrever System.out.println()
+
+x = sc.next(); //recebendo a variável scanner string
+nextInt();
+nextDouble(); //localidade do sistema (com vírgula ou com ponto)
+next().charAt(0); //lê caracter
+
+pritf -> pega a localidade local
+println -> pega a localidade independente (ponto)
+
+Quando você usa um comando de leituradiferente do nextLine() e dá alguma quebra de linha, essa quebra de linha fica "pendente" na entrada padrão. Se você aquela quebra de linha pendente será absorvida pelo nextLine().
+
+Expressão condicional ternária
+
+Sintaxe:
+(condição) ? valor_se_verdadeiro : valor_se_falso
+
+double preco = 34.5;
+double desconto;
+if (preco < 20.0){
+	desconto = preco * 0.1;
+}
+else{
+	desconto = preco * 0.05;
+}
+
+double preco 34.5;
+double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+
+CTRL + SHIFT + F IDENTA O CÓDIGO
+
+Debug:
+
+Seleciona a linha que você quer começar a debugar, Run -> Toggle Breakpoint (Ctrl + Shift + B), depois em Debug As -> Java Application e sai pressionando F6
+
+Convenções
+
+Camel case: lastName
+	- pacotes
+	- atributos
+	- métodos
+	- variáveis e parâmetros
+
+Pascal case: ProductService
+	- classes
+
+Funções de string:
+	- Formatar: toLowerCase(), toUpperCase(), trim()
+	- Recortar: substring(inicio), substring(inicio, fim)
+	- Substituir: Replace(char, char), Replace(string, string)
+	- Buscar: IndexOf, LastIndexOf
+	- str.Split(" ")
+
+Função em classe = método

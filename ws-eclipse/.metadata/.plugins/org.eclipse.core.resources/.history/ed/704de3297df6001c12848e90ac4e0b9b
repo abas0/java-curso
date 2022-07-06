@@ -1,0 +1,16 @@
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US); //padrao de escrita do US
+		int a, b;
+		double resultado/
+		a = 5;
+		b = 2;
+		resultado = (double) a / b; //convertendo divisao de inteiros em decimal
+		
+		System.out.println(resultado);
+	}
+
+}

@@ -80,3 +80,5 @@ Classe:
 	- Controladores: ProdutoController, ClienteController
 	- Utilitários: Calculadora, Compactador
 	- Outros (views, repositórios, gerenciadores, etc)
+
+Método é tipo uma função dentro da classe

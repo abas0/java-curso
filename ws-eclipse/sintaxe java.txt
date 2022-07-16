@@ -82,3 +82,9 @@ Classe:
 	- Outros (views, repositórios, gerenciadores, etc)
 
 Método é tipo uma função dentro da classe
+
+Object possui os seguintes métodos:
+	- getClass: retorna o tipo do objeto
+	- equals: compara se o objeto é igual a outra
+	- hashCode: retorna um código hash do objeto
+	- toString: converte o objeto para string

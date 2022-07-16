@@ -16,6 +16,7 @@ public class Inventory {
 
 	public int removeProducts(int quantity) {
 		this.quantity = this.quantity - quantity;
+		//this.quantity é o atributo da classe
 		return this.quantity;
 	}
 

@@ -88,3 +88,9 @@ Object possui os seguintes métodos:
 	- equals: compara se o objeto é igual a outra
 	- hashCode: retorna um código hash do objeto
 	- toString: converte o objeto para string
+
+Membro não estático é obrigatório ser instanciado
+
+Ex: Calculator calculator = new Calculator();
+
+Método estático é quando ele permanece o mesmo independente do valor do objeto

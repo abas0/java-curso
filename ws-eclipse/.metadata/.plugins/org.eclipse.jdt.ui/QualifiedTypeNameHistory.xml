@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="entities.Triangle"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="products.Inventory"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="coin.CurrencyConverter"/>
 </qualifiedTypeNameHistroy>

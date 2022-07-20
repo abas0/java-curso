@@ -141,3 +141,9 @@ Modificadores de acesso:
 - (nada): o membro só pode ser acessado nas classes do mesmo pacote
 - protected: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes
 - public: o membro é acessado por todas classes (ao menos que ele resida um módulo diferente que não exporte o pacote onde ele está)
+
+Quando alocamos (new) qualquer tipo estruturado (classe ou array) são atribuídos valores padrão aos seus elementos
+	- número: 0
+	- boolean: false
+	- char: caractere código 0
+	- objeto: null

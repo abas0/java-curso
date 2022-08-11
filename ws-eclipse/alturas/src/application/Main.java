@@ -1,5 +1,6 @@
 package application;
 
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -12,7 +13,11 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Quantas pessoas serao digitadas?");
 		int size = sc.nextInt();
-		double[] vectHeight = new double[size];
+		//double[] vectHeight = new double[size];
+		//double[] minor = new double[size];
+		ArrayList<Double> vectHeight = new ArrayList<>(size);
+		ArrayList<Double> minor = new ArrayList<>(size);
+		ArrayList<String> nameMinor = new ArrayList<>(size);
 		Height[] vect = new Height[size];
 		String name;
 		int age;
@@ -30,12 +35,19 @@ public class Main {
 			height = sc.nextDouble();
 			System.out.println(" ");
 			data = new Height(name, height, age);
-			vectHeight[i] = data.getHeight();
+			vectHeight.add(data.getHeight());
+			if(age < 16) {
+				minor.add(data.getHeight());
+				nameMinor.add(data.getName());
+			}
 		}
 		double heightAvarage = data.heightAverage(vect.length, vectHeight);
-		System.out.printf("Altura média: " + heightAvarage);
-		//porcentagem
-		
+		System.out.printf("Altura média: %.2f%n", heightAvarage);
+		double percentage = data.percentage(minor.size(), vectHeight.size());
+		System.out.printf("Porcentagem de pessoas com menos de 16 anos: %.2f%%\n", percentage);
+		for(int i = 0; i < nameMinor.size(); i++) {
+			System.out.println(nameMinor.get(i));
+		}
 		sc.close();
 	}
 

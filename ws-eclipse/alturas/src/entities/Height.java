@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.ArrayList;
+
 public class Height {
 	private String name;
 	private double height;
@@ -38,14 +40,20 @@ public class Height {
 		this.age = age;
 	}
 	
-	public double heightAverage(int size, double[] height) {
+	public double heightAverage(int size, ArrayList<Double> height) {
 		double sum = 0;
 		for(int i = 0; i< size; i++) {
-			sum += height[i];
+			sum += height.get(i);
 		}
 		return sum/size;
 	}
-	//public double percentage() {}
+	
+	public double percentage(int sizeMinor, int sizeHeight) {
+		double sizeMinorDouble = sizeMinor * 1.0; //conversão
+		double sizeHeightDouble = sizeHeight * 1.0; //conversão
+		double percentage = sizeMinorDouble/sizeHeightDouble;
+		return percentage* 100;
+	}
 
 
 	

@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="products.Inventory"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="coin.CurrencyConverter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
